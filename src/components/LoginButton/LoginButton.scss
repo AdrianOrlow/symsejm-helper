@@ -1,0 +1,26 @@
+.loginbutton {
+  border: 0;
+  background: #1977f3;
+  color: #fff;
+  padding: 0;
+  display: flex;
+  width: 13rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    filter: brightness(95%);
+  }
+  &__icon {
+    padding: 0.5rem;
+    width: 1rem !important;
+    height: 1rem;
+  }
+  &__title {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

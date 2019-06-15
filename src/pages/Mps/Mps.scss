@@ -1,0 +1,16 @@
+.mps {
+  &__title {
+    padding: 1rem;
+    background: #ededed;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  &__parties {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

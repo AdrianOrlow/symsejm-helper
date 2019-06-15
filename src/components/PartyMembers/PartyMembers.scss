@@ -1,0 +1,36 @@
+.partymembers {
+  &__top {
+    display: flex;
+  }
+
+  &__title {
+    width: 100%;
+    padding: 1rem;
+    font-weight: 600;
+    background: #ededed;
+  }
+
+  &__number {
+    padding: 1rem;
+    font-weight: 600;
+    background: #eaeaea;
+    text-align: center;
+    min-width: 2rem;
+  }
+
+  &__button {
+    padding: 1rem;
+    border: 0;
+    background: #eaeaea;
+    width: 3rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  &__element {
+    display: flex;
+    & > .person {
+      padding: 1rem;
+    }
+  }
+}

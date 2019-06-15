@@ -1,0 +1,46 @@
+.clubinfo {
+  display: flex;
+  &__img {
+    display: block;
+    object-fit: cover;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    background: #ececec;
+    padding: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  $medium-size: 3rem;
+  $big-size: 4rem;
+
+  &--medium {
+    .clubinfo__img {
+      height: $medium-size;
+      width: $medium-size;
+    }
+
+    .clubinfo__name {
+      height: 1rem;
+      width: calc(100% - #{$medium-size});
+    }
+  }
+
+  &--big {
+    .clubinfo__img {
+      height: $big-size;
+      width: $big-size;
+    }
+
+    .clubinfo__name {
+      height: 2rem;
+      width: calc(100% - #{$big-size});
+      font-size: 1.25rem;
+    }
+  }
+}

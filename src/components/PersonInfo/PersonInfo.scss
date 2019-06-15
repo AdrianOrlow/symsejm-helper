@@ -1,0 +1,39 @@
+.person {
+  display: grid;
+  grid-template-columns: 2rem auto 2rem;
+  grid-gap: 1rem;
+  width: 100%;
+  font-weight: 600;
+  background: #ededed;
+
+  &--gold {
+    background: #ffe888;
+    .person__icon {
+      background: #ffdf59;
+    }
+  }
+
+  &__img {
+    height: 2rem;
+    width: 2rem;
+    object-fit: cover;
+  }
+
+  &__name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-self: center;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: #ececec;
+  }
+}

@@ -1,0 +1,34 @@
+.party {
+  &__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__link {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    background: #ededed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+
+    &__icon {
+      font-size: 2rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    &__title {
+      text-align: center;
+      padding: 1rem;
+      background: #eaeaea;
+    }
+
+    &:hover {
+      filter: brightness(97.5%);
+    }
+  }
+}

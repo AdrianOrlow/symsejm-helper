@@ -1,0 +1,35 @@
+.parties {
+  max-width: 40rem;
+  margin: auto;
+  &__top {
+    display: grid;
+    grid-template-columns: auto 10rem;
+    grid-gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    padding: 1rem;
+    background: #ededed;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  &__button {
+    border: 0;
+    background: #3498db;
+    color: #fff;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    &__icon {
+      padding-right: 1rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+}
